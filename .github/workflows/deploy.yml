@@ -24,3 +24,9 @@ jobs:
       - run: docker build -t ${{ secrets.DOCKER_USERNAME }}/multi-nginx ./nginx
       - run: docker build -t ${{ secrets.DOCKER_USERNAME }}/multi-server ./server
       - run: docker build -t ${{ secrets.DOCKER_USERNAME }}/multi-worker ./worker
+
+      - run: docker push ${{ secrets.DOCKER_USERNAME }/multi-client
+      - run: docker push ${{ secrets.DOCKER_USERNAME }/multi-nginx
+      - run: docker push ${{ secrets.DOCKER_USERNAME }/multi-server
+      - run: docker push ${{ secrets.DOCKER_USERNAME }/multi-worker
+ 
