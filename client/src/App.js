@@ -9,6 +9,7 @@ function App() {
 	<Router>
 		<div className="App">
 		  <header className="App-header">
+      <h2>Docker Demo</h2>
 			<img src={logo} className="App-logo" alt="logo" />
 			<Link to="/">Home</Link>
 			<Link to="/calc">Calculator</Link>
